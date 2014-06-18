@@ -36,7 +36,7 @@ Ziggs = 4,Zilean = 4,Zyra = 3
 currSkinId = 0
 canChange = true 
 function OnLoad()
-	print("<font color = '#00FFFF' >Skin Hax by Shalzuth</font>")
+	print("<font color = '#00FFFF' >Skin Hax by Shalzuth, hit Left arrow to cycle through skins</font>")
 end
 function OnWndMsg(msg, key)
     if key == 0x25 and msg == 0x100 and canChange then
