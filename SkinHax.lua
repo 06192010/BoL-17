@@ -36,7 +36,7 @@ Ziggs = 4,Zilean = 4,Zyra = 3
 currSkinId = 0
 canChange = true 
 function OnLoad()
-	print("<font color = '#00FFFF' >Skin Hax by Shalzuth</font>")
+    print("<font color = '#00FFFF' >Skin Hax by Shalzuth</font>")
     Menu = scriptConfig('SkinHax', 'SkinHax')
     Menu:addParam('Cycle', 'Cycle Skins', SCRIPT_PARAM_ONKEYDOWN, false, 0x60)
 end
