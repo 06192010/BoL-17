@@ -36,14 +36,14 @@ Ziggs = 4,Zilean = 4,Zyra = 3
 currSkinId = 0
 canChange = true 
 function OnLoad()
-	print("<font color = '#00FFFF' >Skin Hax by Shalzuth, hit Left arrow to cycle through skins</font>")
+	print("<font color = '#00FFFF' >Skin Hax by Shalzuth, hit 0(numpad) to cycle through skins</font>")
 end
 function OnWndMsg(msg, key)
-    if key == 0x25 and msg == 0x100 and canChange then
+    if key == 0x60 and msg == 0x100 and canChange then
         canChange = false
         GenModelPacket(myHero.charName, currSkinId)
         if (numSkins[myHero.charName] > currSkinId) then currSkinId = currSkinId + 1 else currSkinId = 0 end
-    elseif key == 0x25 and msg == 0x101 then
+    elseif key == 0x60 and msg == 0x101 then
         canChange = true
     end
 end
