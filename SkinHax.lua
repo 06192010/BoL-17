@@ -71,7 +71,6 @@ function GenModelPacket(champ, skinId)
     for i = #champ + 1, 64 do
         p:Encode1(0)
     end
-    p.dwArg1 = 0
-    p.dwArg2 = 0
+    p:Hide()
     RecvPacket(p)
 end

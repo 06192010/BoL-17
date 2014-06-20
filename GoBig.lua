@@ -37,9 +37,8 @@ function ChangeSize(size, seqNum)
     p:Encode1(0x8)
     p:EncodeF(myHero.networkID)
     p:Encode4(0x800)
-    p:Encode1(0x4)
+    p:Encode1(0x8)
     p:EncodeF(size)
-    p.dwArg1 = 0
-    p.dwArg2 = 0
+    p:Hide()
     RecvPacket(p)
 end
