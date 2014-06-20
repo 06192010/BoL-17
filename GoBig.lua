@@ -4,7 +4,7 @@ canIncrease = true
 canDecrease = true 
 size = 1
 function OnLoad()
-	print("<font color = '#00FFFF' >Go Big by Shalzuth</font>")
+    print("<font color = '#00FFFF' >Go Big by Shalzuth</font>")
     Menu = scriptConfig('GoBig', 'Go Big')
     Menu:addParam('Increase', 'Increase Size', SCRIPT_PARAM_ONKEYDOWN, false, 0x6B)
     Menu:addParam('Decrease', 'Decrease Size', SCRIPT_PARAM_ONKEYDOWN, false, 0x6D)
