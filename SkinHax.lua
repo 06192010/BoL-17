@@ -52,7 +52,7 @@ function OnTick()
     end
 end
 function GenModelPacket(champ, skinId)
-    p = CLoLPacket(0x96)
+    p = CLoLPacket(0x97)
     p:EncodeF(myHero.networkID)
     p.pos = 1
     t1 = p:Decode1()
